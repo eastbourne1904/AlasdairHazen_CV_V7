@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" width="100%" height="100%">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Cover')" id="defaultOpen">Cover Letter</button>
+  <button class="tablinks" onclick="openCity(event, 'Career')">Career</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Certificates')">Certificates</button>
+  <button class="tablinks" onclick="openCity(event, 'Awards')">Awards</button>
+  <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
+  <button class="tablinks" onclick="openCity(event, 'Resume')">Resume/CV</button>
+</div>
+
+<div id="Cover" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p>I am a former 'subject matter expert' in Tivoli Monitoring / Netcool retooled for 'entry level programming' over the past year.</p>
+  <p>Due to corporate downsizing and openSource monitoring, my skillset was only partially suitable for current open positions. For this reason I decided to return to University and retool in Full Stack Web Development at Johns Hopkins University via Coursera.</p>
+  <p>Most of my former skillset lay within programming, creating tool specific webpages, and building backend databases. For this reason I chose Full Stack Development. It was a natural progression.</p>
+  <p>As a SME I managed small teams, handled Technical Support, Mentored level 1 employees, and created specific backend and frontend databases.</p>
+  <p>For me, entering an entry level position allows me to become strong and secure in my new skillset. This, along with my years of experience, will allow me to onboard quickly and become an invaluable member of the team.</p>
+  <p>For my employer, hiring an experienced IT person at entry level wages saves money while not giving up experience.</p>
+  <p>My salary requirements are market rate for the position. This should NOT deter hire for fear I will become bored or unhappy.  At this point in my career I welcome both the ease of entry level and the challenge of learning and moving up.</p>
+</div>
+
+<div id="Career" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h6 style="color:blue">*Click on business icon for more information!</h6>
+  <a href="content\pages\HeavyBear.html"><img src="img\heavybear_logo.png" alt="HeavyBear Bookstore" width="30" height="30"></a>
+</div>
+
+<div id="Education" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Education</h3>
+  <p>Education is the capital of Japan.</p>
+</div>
+
+<div id="Certificates" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Certificates</h3>
+  <p>Career is the capital of France.</p>
+</div>
+
+<div id="Awards" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Awards</h3>
+  <p>Career is the capital of France.</p>
+</div>
+
+<div id="Portfolio" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Portfolio</h3>
+  <p>Education is the capital of Japan.</p>
+</div>
+
+<div id="Resume" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Resume/CV</h3>
+  <p>Education is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

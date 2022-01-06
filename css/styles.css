@@ -1,0 +1,149 @@
+/* Begin Alasdair hover effects */
+.ml2 {
+  font-weight: 900;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 2em;
+  color:#465ECC;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/* End Alasdair hover effects */
+
+.center {
+  text-align: center;
+  padding: 0;
+}
+
+.pad {
+  padding-top: 50px;
+}
+
+.profilePic {
+  height: 75%;
+  width: 75%;
+}
+
+h3.u {
+  font-size: 125%;
+  color: #0A169F;
+  text-shadow: 2px 1px #FF0000;
+}
+
+h3.s {
+  font-size: 100%;
+  color: red;
+  text-shadow: 2px 2px white;
+}
+
+h3.a {
+  font-size: 135%;
+}
+h3.b {
+  font-size: 100%;
+}
+p.c {
+  font-size: 80%;
+}
+h3.d {
+  font-size: 80%;
+}
+a.e {
+  font-size: 70%;
+  color: blue;
+}
+div g {
+  background-color: purple;
+}
+.jumbotron {
+  padding: 0px;
+  padding-top: 20px;
+  color: white;
+  background-image: linear-gradient(black, white);
+}
+
+.upsideDownGradient {
+  color: white;
+  background-image: linear-gradient(white, black);
+}
+
+.button_style {
+  background-color: white;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.row {
+  margin-left:20px;
+}
+
+.upsBackground {
+  background-image: url('img/ups.jfif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mySignature {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

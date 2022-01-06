@@ -1,0 +1,15 @@
+.jumbotron {
+  padding: 0px;
+  padding-top: 20px;
+  color: white;
+  background-image: linear-gradient(black, white);
+}
+h4 {
+  color:yellow;
+}
+.center {
+  text-align: center;
+}
+.emailColour {
+  color:blue;
+}

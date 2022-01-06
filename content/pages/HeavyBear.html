@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="content/css/master.css">
+
+<body>
+
+<!-- Begin Jumbotron -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row center">
+        <div class="col">
+          <div ng-app="myApp" ng-controller="personCtrl">
+            <h4>{{fullName()}}</h4>
+            <p>{{ currentJob }}</p>
+            <p>{{ formerJob }}</p>
+            <a class="emailColour" href="mailto:alasdair.Hazen.com">{{ email }}</a>
+          </div>
+        </div>
+        <div class="col">
+          <img src="img\profilePic.png" alt="Profile Picture" class="profilePic" width=300px height=200px>
+        </div>
+        <div class="col">
+          <div ng-app="myApp" ng-controller="personCtrl">
+            <p>{{ address1 }}</p>
+            <p>{{ address2 }}</p>
+            <p>{{ address3 }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Jumbotron -->
+
+<!-- Begin tabs -->
+  <iframe src="include\directives\tabs.html" width="100%" height="1000"></iframe>
+<!-- End tabs -->
+
+<!-- Begin content -->
+This is the HeavyBear bookstore
+<!-- End content -->
+
+
+<script src="include\directives\myHeader.js"></script>
+<!-- <script src="include\directives\tabs.js"></script> -->
+</body>
+</html>
